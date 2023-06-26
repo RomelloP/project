@@ -1,35 +1,11 @@
 # project
 
- would need to write the Title 
-Create a Table Limit Tab, Wager/Shooter/On-Off Button,  Create either dice or two random number generators 1-6.
+ Technologies used:
+ JS, CSS, HTML
 
-Have to build out the table 5 boxes set up like the half of a crap table
+ I just wanted to create a traditional craps game that has one player.
+ You would start off with the come out roll. 7 or 11 is the winner on the come out roll.
+ 2,3,12's are crap numbers on the come out roll, which means you will lose your money.
 
-.game-table{
-
-}
-
-.game-table .box {
-
-}
-
-div*5-game-table titles
-
-JS
-
-<button id*3 W/S/O
-<div id dice
-
-Function rollDice() {
-
-}
-
-div {
-
-}
-
-SET diceCount to 0
-minimumBet 10
-onOffButton OFF
-shooterButton
-Loop for game rules and settings
+ If you roll a 4,5,6,8,9, and 10 they will become your point number to earn more money on.
+ If you roll a 7 while your point is active you will lose.
