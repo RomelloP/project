@@ -9,3 +9,4 @@
 
  If you roll a 4,5,6,8,9, and 10 they will become your point number to earn more money on.
  If you roll a 7 while your point is active you will lose.
+
