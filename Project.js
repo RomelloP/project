@@ -1,3 +1,5 @@
+function rollDice() {
+
 let images = [ 
   "dice-1.png",
   "dice-2.png",
@@ -8,11 +10,17 @@ let images = [
 
 ]
 
-let dice = document.querySelectorAll("img");
-
-let rollDice() {
-  return Math.floor(Math.random() * 6) + 1;
+let rolls = [];
+for (let i = 0; i < numRolls; i++) {
+  let randomIndex = Math.floor(Math.random() * images.length);
+  let diceImage = images[randomIndex];
+  rolls.push(diceImage);
+ // console.log(diceImage);
 }
+
+return rolls;
+}
+
 
 // Function to play a round of craps
 function playCraps() {
@@ -65,8 +73,8 @@ let dice2 = document.getElementById("dice2");
 // Roll button click event
 let rollButton = document.getElementById("rollButton");
 rollButton.addEventListener("click", function() {
-  let dice1Value = rollDice();
-  let dice2Value = rollDice();
+  let dice1Value = rollDice()[0];
+  let dice2Value = rollDice()[1];
 
   dice1.style.backgroundImage = "url('dice_images/dice-" + dice1Value + ".png')";
   dice2.style.backgroundImage = "url('dice_images/dice-" + dice2Value + ".png')";
@@ -74,4 +82,3 @@ rollButton.addEventListener("click", function() {
   // Call the playCraps function here to play the game
   playCraps();
 });
-
